@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Radicar PQRS</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    </head>
+    <body>
+      
+        <!-- Menu de opciones -->
+        <nav class="navbar bg-body-tertiary">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <img src="img/navbar/logo.png" alt="" >          
+              </a>
+              <a class="navbar-brand aria-current" href="">Radicar PQRS</a>
+              <a class="navbar-brand" href="esconspqrs.html">Revisar respuestas PQRS</a>
+              <a class="btn btn-danger" href="index.html" role="button">Salir</a>
+            </div>
+          </nav>
+
+        <!-- Formulario -->  
+        <br>
+        <center>
+          <div class="card" style="width: 70rem;">
+            <div class="card-body">
+              <div align="left">
+                <h2>Formulario para Radicar PQRS</h2>
+              </div>
+
+              <br>
+
+              <form name="radicadoPQRS">
+                  <!-- Fila 1-->
+                  <div class="row">
+                    <div class="col">
+                      <div class="form-floating">
+                        <input class="form-control" placeholder="Documento de identidad" id="floatingTextareaID"> <!-- ID Form-->
+                        <label for="floatingTextareaID">Documento de identidad</label>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="form-floating">
+                        <select class="form-select" id="floatingSelectIDType" aria-label="Tipo de documento"> <!-- ID Tipo Form-->
+                          <option selected>Seleccione el tipo de Documento</option>
+                          <option value="1">Cedula de Ciudadania</option>
+                          <option value="2">Cedula de extranjeria</option>
+                          <option value="3">Tarjeta de identidad</option>
+                        </select>
+                        <label for="floatingSelectIDType">Tipo de Documento</label>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <br>
+                  <!-- Fila 2-->
+
+                  <div class="row">
+                    <div class="col">
+                      <div class="form-floating">
+                        <input class="form-control" placeholder="Nombre" id="floatingTextareaNombre"> <!-- Nombre Form-->
+                        <label for="floatingTextareaNombre">Nombre</label>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="form-floating">
+                        <input class="form-control" placeholder="Apellido" id="floatingTextareaApellido"> <!-- Apellido Form-->
+                        <label for="floatingTextareaApellido">Apellido</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <br>
+                  <!-- Fila 3-->
+
+                  <div class="row">
+                    <div class="col">
+                      <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInputEmail" placeholder="name@ejemplo.com"> <!-- Correo Form-->
+                        <label for="floatingInputEmail">Correo Electronico</label>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="form-floating">
+                        <input class="form-control" placeholder="Celular" id="floatingTextareaCelular"> <!-- Celular Form-->
+                        <label for="floatingTextareaCelular">Celular</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <br>
+                  <!-- Fila 4-->
+
+                  <div class="row">
+                    <div class="col">
+                      <div class="form-floating">
+                        <select class="form-select" id="floatingSelectCountry" aria-label="Pais"> <!-- ID Tipo Form-->
+                          <option selected>Seleccione su Pais</option>
+                          <option value="1">Colombia</option>
+                          <option value="2">Armenia</option>
+                          <option value="3">Japon</option>
+                        </select>
+                        <label for="floatingSelectCountry">Pais</label>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="form-floating mb-3">
+                        <input class="form-control" id="floatingInputCiudad" placeholder="Ciudad"> <!-- Ciudad Form-->
+                        <label for="floatingInputCiudad">Ciudad</label>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="form-floating">
+                        <input class="form-control" placeholder="Empresa" id="floatingTextareaEmpresa"> <!-- Empresa Form-->
+                        <label for="floatingTextareaEmpresa">Empresa</label>
+                      </div>
+                    </div>
+                  </div>
+
+                <br>
+
+                <!-- Caja de texto--> 
+
+                <div class="form-floating">
+                  <textarea class="form-control" style="resize: none; height: 250px;" placeholder="Descripcion de la solicitud" id="floatingTextareaSolicitude"></textarea>
+                  <label for="floatingTextareaSolicitude">Descripcion de la solicitud</label>
+                </div>
+
+                <br>
+                <div align="right"> <!--Mandar captura del radicado en pestaña emergente-->              
+                  <button type="reset" class="btn btn-primary">Limpiar</button> <!-- Boton reset -->                    
+                  <button type="submit" class="btn btn-primary" name="Salir">Enviar Solicitud</button> <!-- Boton de enviar form --> 
+                </div>                 
+              </form>              
+            </div>  
+          </div>
+        </center>  
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>    

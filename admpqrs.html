@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Revisar PQRS</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    </head>
+    <body>
+
+        <!-- Menu de opciones -->
+
+        <nav class="navbar bg-body-tertiary">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <img src="img/navbar/logo.png" alt="" >          
+              </a>
+              <a class="navbar-brand aria-current" href="">Revisar PQRS</a>
+              <a class="btn btn-primary" id="liveToastBtn" role="button">Consultar Record</a>
+              <a class="btn btn-danger" href="index.html" role="button">Salir</a>
+            </div>
+          </nav>
+
+        <!-- Tabla de radicados-->
+          
+        <br>
+        <center>
+        <div class="card" style="width: 100rem;">
+            <div class="card-body">
+                <table class="table">
+                <thead>
+                    <tr>
+                    <th scope="col">Estado</th>
+                    <th scope="col">Fecha</th>
+                    <th scope="col">PQRS</th>
+                    <th scope="col">Respuesta</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <th scope="row">En Proceso</th>
+                    <td>12/07/2023</td>
+                    <td>Falta de cuidado en las intalaciones</td>
+
+                    <td>
+                        <form action="">
+
+                            <div class="form-floating">
+                                <textarea class="form-control" style="resize: none; height: 250px;" placeholder="Respuesta de PQRS" id="floatingTextareaSolicitude"></textarea>
+                                <label for="floatingTextareaSolicitude">Respuesta de PQRS</label>
+                            </div>      
+                            <br>
+                            <div align="right">          
+                                <button type="reset" class="btn btn-danger">Bloquear</button> <!-- Boton Bloquear -->                    
+                                <button type="submit" class="btn btn-primary" name="Salir">Enviar</button> <!-- Boton Enviar --> 
+                        
+                            </form>
+                        </div>                    
+                    </td>
+
+                    </tr>
+                </tbody>
+                </table>
+            </div>  
+        </div>
+        </center>
+
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>    
